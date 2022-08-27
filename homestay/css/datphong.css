@@ -1,0 +1,369 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Cuprum', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+header{
+    position: relative;
+    margin-bottom: 230px;
+}
+#anhnen{
+    background-color: #fff;
+    background-position: bottom;
+    background-size: cover;
+    height:40%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: -1000;
+}
+body{
+    margin: 0;
+}
+div.subs{
+    background-color:rgba(223, 222, 222, 0.8);
+    width: 100%;
+    z-index: 2;
+}
+div.sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.photo img{
+    width: 80px;
+}
+div.tonggle-menu > ul{
+    display: flex;
+}
+div.tonggle-menu > ul li{
+    list-style-type: none;
+    padding: 15px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+div.tonggle-menu > ul li a{
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+}
+
+#item1{
+    position: relative;
+}
+div.menus{
+    position: absolute;
+    padding: 0;
+    background-color:#ffffff;
+    width: 450px;
+    margin-top: 15px;
+    display: none;
+    border-radius: 0px 20px;
+
+}
+div.menus>ul{
+    padding: 0;
+}
+#item1:hover .menus{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    border: 1px solid rgb(117, 116, 116);
+    box-shadow: 7px 6px 11px 4px #00000029;
+}
+div.menus>ul>li{
+    font-size: 15px;
+}
+/* ảnh trang chủ*/
+img.photohome{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+/* đăng nhập */
+li.click{
+    position: relative;
+}
+div.login{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    display: none;
+}
+div.login.active{
+    width: 50%;
+    display:block;
+    position: absolute;
+}
+div.all-login.active{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(223, 222, 222, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 0;
+    position: fixed;
+}
+div.logins input{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+div.off-click{
+    position: absolute;
+    right: 0;
+    padding: 0 12px 0 0;
+}
+button.buy-ticket{
+    border: none;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #fa9600;
+    width: 100%;
+}
+div.licenses{
+    background-color: #fa9600;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 3px;
+}
+div.footer{
+    background-color:#0b3f67;
+    height: 400px;
+}
+div.information ul li{
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    
+}
+div.information ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+div.information strong{
+    flex: 0 0 30%;
+}
+ul.icon li a i{
+    margin: 10px;
+}
+div.mess-box{
+    padding: 12px 15px;
+    position: fixed;
+    font-size: 20px;
+    background-color: #fa9600;
+    border-radius: 50px;
+    bottom: 70px;
+    left: 7px;
+}
+div.call-box{
+    position: fixed;
+    padding: 12px 15px;
+    font-size: 20px;
+    background-color: #fa9600;
+    border-radius: 50px;
+    bottom: 130px;
+    left: 7px;
+}
+div.benifit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+div.benifit-item{
+    width: 25%;
+    background-color: #0b3f67; 
+    margin: 20px;
+    padding: 30px;
+    border-radius: 30PX;
+    color: #fa9600;
+}
+div.benifit-item >i {
+    width: 100%;
+    font-size: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+div.benifit-item p{
+    color: white;
+}
+/* đặt phòng*/
+div.homestay{
+    display: flex;
+    justify-content: center ;
+}
+div.dat-phong{
+    display: flex;
+}
+div.dat-phong > p{
+    padding: 15px;
+    background-color: #fa9600;
+    margin: 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: white;
+}
+/* thông tin của homestay*/
+ul.tab-title{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 200px;
+    font-size: 30px;
+    background-color: rgb(140, 140, 140, 0.13);
+    padding: 20px 0 10px 0;
+    border-radius: 30px 30px 0 0;
+}
+div.all-title{
+    background-color:  rgb(140, 140, 140, 0.13);
+    margin: 0 100px 0 100px;
+    padding: 20px;
+    border-radius: 20px;
+}
+div.all-title h2{
+    color: #0b3f67;
+}
+div.quydinh li{
+    list-style-type: disc;
+}
+#name{
+    border: 3px solid #fa9600;
+    border-radius: 20px 0 20px 0;
+    width: 100%;
+    padding: 10px;
+}
+#email{
+    border: 3px solid #fa9600;
+    border-radius: 20px 0 20px 0;
+    width: 100%;
+    padding: 10px;
+}
+#comment{
+    border: 3px solid #fa9600;
+    border-radius: 20px 0 20px 0;
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+}
+#send{
+    background-color: #fa9600;
+    border: 0;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    margin: 10px auto 0 auto;
+}
+div.review{
+    display: none;
+}
+div.thongso{
+    display: none;
+}
+div.quydinh{
+    display: none;
+}
+div.qa{
+    display: none;
+}
+div.danhgia{
+    display: none;
+}
+div.review.active{
+    display: block;
+}
+div.thongso.active{
+    display: block;
+}
+div.quydinh.active{
+    display: block;
+}
+div.qa.active{
+    display: block;
+}
+div.danhgia.active{
+    display: block;
+}
+/*tin tức*/
+a.single-news{
+    width: 25%;
+    background-color:rgb(255, 255, 255);
+    box-shadow: -10px -13px 10px 0px #00000029;
+    border-radius: 30px 0 30px 0; 
+    margin: 10px;
+}
+div.single-news-content{
+    padding: 10px;
+}
+div.de > h2{
+    border-bottom: 3px solid #fa9600;
+    padding-left: 100px;
+}
+a.single-news:hover{
+    transition: box-shadow .5s;
+    box-shadow: -1px -1px 1px 0px #00000029;
+    
+}
+/* đătj phòng*/
+form.put-room{
+    background-color: white;
+    border: 2px solid #fa9600;
+    padding: 20px;
+}
+div.qqq{
+    display: none;
+}
+div.qqq.active{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(223, 222, 222, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 0;
+    position: fixed;
+}
+form.put-room h2{
+    background-color: #0b3f67;
+    color: #fa9600;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+div.off-log-in{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 20px;
+}
+form.put-room p{
+    font-size: 13px;
+    color: #fa9600;
+}
+#full-width{
+    margin: 15px;
+    width: 300px;
+    padding: 10px;
+    border: 3px solid #fa9600;
+    border-radius: 20px 0 20px 0;
+}

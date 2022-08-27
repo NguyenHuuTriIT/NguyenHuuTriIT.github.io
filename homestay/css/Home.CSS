@@ -1,0 +1,472 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Cuprum', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+header{
+    position: relative;
+    margin-bottom: 180px;
+}
+#anhnen{
+    background-color: #fff;
+    background-position: bottom;
+    background-size: cover;
+    height:40%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: -1000;
+}
+body{
+    margin: 0;
+}
+div.subs{
+    background-color:rgba(223, 222, 222, 0.8);
+    width: 100%;
+    z-index: 2;
+}
+div.sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.photo img{
+    width: 80px;
+}
+div.tonggle-menu > ul{
+    display: flex;
+}
+div.tonggle-menu > ul li{
+    list-style-type: none;
+    padding: 15px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+div.tonggle-menu > ul li a{
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+}
+
+#item1{
+    position: relative;
+}
+div.menus{
+    position: absolute;
+    padding: 0;
+    background-color:#ffffff;
+    width: 450px;
+    margin-top: 15px;
+    display: none;
+    border-radius: 0px 20px;
+
+}
+div.menus>ul{
+    padding: 0;
+}
+#item1:hover .menus{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    border: 1px solid rgb(117, 116, 116);
+    box-shadow: 7px 6px 11px 4px #00000029;
+}
+div.menus>ul>li{
+    font-size: 15px;
+}
+/* ảnh trang chủ*/
+img.photohome{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+/* đăng nhập */
+li.click{
+    position: relative;
+}
+div.login{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    display: none;
+}
+div.login.active{
+    width: 50%;
+    display:block;
+    position: absolute;
+
+}
+div.all-login.active{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(223, 222, 222, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+    position: fixed;
+    transition: all 1s;
+}
+div.logins input{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+div.off-click{
+    position: absolute;
+    right: 0;
+    padding: 0 12px 0 0;
+}
+button.buy-ticket{
+    border: none;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #fa9600;
+    width: 100%;
+}
+/*phần bản quyền*/
+div.licenses{
+    background-color: #fa9600;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 3px;
+}
+div.footer{
+    background-color:#0b3f67;
+    height: 400px;
+}
+div.information ul li{
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    
+}
+div.information ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+div.information strong{
+    flex: 0 0 30%;
+}
+ul.icon li a i{
+    margin: 10px;
+}
+/* ly do chon*/
+div.section-bg{
+    background-image: url(http://mauweb.monamedia.net/trabble/wp-content/uploads/2018/12/travlec.jpg);
+    background-position: 10% 10%;
+}
+div.inner{
+    display: block;
+    padding: 15px 0 20px;
+}
+div.inner h1{
+    text-align: center;
+}
+div.inners{
+    display: flex;
+    justify-content:space-around;
+}
+div.small-inner{
+    width: 20%;
+    background-color: antiquewhite;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+/* box */
+div.mess-box{
+    padding: 12px 15px;
+    position: fixed;
+    font-size: 20px;
+    background-color: #fa9600;
+    border-radius: 50px;
+    bottom: 70px;
+    left: 7px;
+}
+div.call-box{
+    position: fixed;
+    padding: 12px 15px;
+    font-size: 20px;
+    background-color: #fa9600;
+    border-radius: 50px;
+    bottom: 130px;
+    left: 7px;
+}
+/* tìm kiếm*/
+div.searchs{
+    width: 70%;
+    margin: auto;
+}
+div.search{
+    background-color: #ffffff;
+    padding: 5px 7px 5px 8px;
+    border-radius: 20px 0 20px 0;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    box-shadow: 7px 6px 11px 4px #00000029;
+}
+div.search  input{
+    border: none;
+    background-color: #ffffff;
+}
+div.search p {
+    font-size: 19px;
+    font-weight: 500;
+}
+div.search >div{
+    padding: 10px;
+    border-left: 3px solid black;
+}
+div.search >div:first-child{
+    border: none;
+}
+div.search > div:last-child{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#submit{
+    border: none;
+    background-color: #ffffff;
+}
+#submit >i {
+    font-size: 50px;
+    background-color: #fa9600;
+    padding: 6px;
+    border-radius: 50px;
+    width: 100px;
+    height: 60px;
+}
+/* giới thiệu */
+div.benifit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+div.benifit-item{
+    width: 25%;
+    background-color: #0b3f67; 
+    margin: 20px;
+    padding: 30px;
+    border-radius: 30PX;
+    color: #fa9600;
+}
+div.benifit-item >i {
+    width: 100%;
+    font-size: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+div.benifit-item p{
+    color: white;
+}
+/*TIN TỨC*/
+a.single-news{
+    width: 25%;
+    background-color:rgb(255, 255, 255);
+    box-shadow: -10px -13px 10px 0px #00000029;
+    border-radius: 30px 0 30px 0; 
+    margin: 10px;
+}
+div.single-news-content{
+    padding: 10px;
+}
+div.de > h2{
+    border-bottom: 3px solid #fa9600;
+    padding-left: 100px;
+}
+a.single-news:hover{
+    transition: box-shadow .5s;
+    box-shadow: -1px -1px 1px 0px #00000029;
+    
+}
+/* địa điểm yêu thích*/
+div.item {
+    margin: auto;
+    width: 50%;
+    position: relative;
+    padding: 20px;
+}
+
+div.item img {
+    width: 100%;
+    height: 360px;
+    border-radius: 0 0 10px 10px;
+}
+div.thumb {
+    display: none;
+}
+div.thumb > div{
+    width: 7%;
+}
+div.button-next i{ 
+    position:absolute;
+    top: 50%;
+    bottom: 0;
+    right: -50px;
+    background-color: #fa9600;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}  
+div.button-prev{
+    position:absolute;
+    top: 50%;
+    bottom: 0;
+    left: -50px;
+    background-color: #fa9600;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+div.nameImg{
+    background-color: #fa9600;
+    padding: 5px;
+    text-align: center;
+    font-weight:bolder;
+    font-size: 20px;
+    border-radius: 10px 10px 0 0;
+}
+/* Nhận Xét */
+div.comment{
+    margin-top: 10px;
+    display: flex;
+}
+div.comments{
+    content: "";
+    display: block;
+    width: 100%;
+    min-width: 37px;
+    height: 4px;
+    background: #fa9600;
+    margin-top: 8px;
+}
+div.user{
+    font-size: 60px;
+    color: #fa9600;
+    margin: 10px;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
+.carousel-item {
+    position: relative;
+    text-align: center;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
+.text {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 10px
+}
+.center {
+    position:absolute;
+    top: 50%;
+    color:#fff;
+    width: 100%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+}
+#img { 
+    width: 500px;
+    height: 500px;
+}
+.container {
+    position: relative;
+  }
+
+div.to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #fa9600;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    opacity: 0;
+}
+
+div.to-top.active {
+    opacity: 1;
+}
+
+div.to-top:hover {
+    color:#fff; 
+}
+
+@media screen and (max-width: 414px) {
+
+    div.tonggle-menus {
+        width: 70%;
+    }
+
+    div.tonggle-menu > ul {
+        flex-wrap: wrap;
+    }
+
+    div.tonggle-menu > ul > li {
+        width: 50%;
+    }
+
+    div.menus {
+        width: 100vw;
+        transform: translateX(-282px);
+    }
+
+    div.search {
+        flex-wrap: wrap;
+    }
+}

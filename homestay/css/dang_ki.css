@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Cuprum', sans-serif;
+}
+
+section {
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+a{
+    text-decoration: none;
+    color:#fa9600 !important;
+}
+li{
+    list-style-type: none;
+}
+body{
+    margin: 0;
+}
+div.subs{
+    background-color:rgba(223, 222, 222, 0.8);
+    width: 100%;
+    z-index: 2;
+}
+div.sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.photo img{
+    width: 80px;
+}
+div.tonggle-menu > ul{
+    display: flex;
+}
+div.tonggle-menu > ul li{
+    list-style-type: none;
+    padding: 15px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+div.tonggle-menu > ul li a{
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+}
+
+#item1{
+    position: relative;
+}
+div.menus{
+    position: absolute;
+    padding: 0;
+    background-color:#ffffff;
+    width: 450px;
+    margin-top: 15px;
+    display: none;
+    border-radius: 0px 20px;
+
+}
+div.menus>ul{
+    padding: 0;
+}
+#item1:hover .menus{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    border: 1px solid rgb(117, 116, 116);
+    box-shadow: 7px 6px 11px 4px #00000029;
+}
+div.menus>ul>li{
+    font-size: 15px;
+}
+/* đăng nhập */
+li.click{
+    position: relative;
+}
+div.login{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    display: none;
+}
+div.login.active{
+    width: 50%;
+    display:block;
+    position: absolute;
+
+}
+div.all-login.active{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(223, 222, 222, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+    position: fixed;
+}
+div.logins input{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+div.off-click{
+    position: absolute;
+    right: 0;
+    padding: 0 12px 0 0;
+}
+button.buy-ticket{
+    border: none;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #fa9600;
+    width: 100%;
+}
+/* phần bản quyền*/
+div.licenses{
+    background-color: #fa9600;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 3px;
+}
+div.footer{
+    background-color:#0b3f67;
+    height: 400px;
+}
+div.information ul li{
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 17px;
+}
+div.information ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+div.information strong{
+    flex: 0 0 30%;
+}
+ul.icon li a i{
+    margin: 10px;
+}
+/*mess - call box*/
+div.mess-box{
+    padding: 12px 15px;
+    position: fixed;
+    font-size: 20px;
+    background-color: #fa9600;
+    border-radius: 50px;
+    bottom: 70px;
+    left: 7px;
+}
+div.call-box{
+    position: fixed;
+    padding: 12px 15px;
+    font-size: 20px;
+    background-color: #fa9600;
+    border-radius: 50px;
+    bottom: 130px;
+    left: 7px;
+    
+}
+i {
+    color: #0b3f67;
+}
+/* Đăng kí tài khoản*/
+.flexs{
+    display: flex;
+    align-items: center;
+}
+div.dk{
+    justify-content: space-around;
+}
+
+div.dangki {
+    background-color: #fff;
+}
+
+div.dangki > div{
+    margin: 20px;
+}
+div.nhap{
+    padding: 10px;
+    border: 2px solid #fa9600;
+    border-radius: 5px;
+    background-color: #fff;
+}
+div.nhap >i{
+    color: #fa9600;
+}
+div.nhap input{
+    width: 100%;
+    padding: 5px;
+    border: none;
+}
+div.nhap select{
+    border: none;
+    padding: 4px;
+}
+div.taotk{
+    display: flex;
+    justify-content: space-around;
+    background-color: #4e9cf0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #0b3f67;
+}
+div.taotk button{
+    border: none;
+    background-color: #4e9cf0;
+    font-size:15px;
+}
+div.gach{
+    width: 100%;
+    border-bottom: 2px solid #fa9600;
+}

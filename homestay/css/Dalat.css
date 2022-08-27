@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Cuprum', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+header{
+    position: relative;
+    margin-bottom: 50px;
+}
+#anhnen{
+    background-color: #fff;
+    background-position: bottom;
+    background-size: cover;
+    height:40%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: -1000;
+}
+body{
+    margin: 0;
+}
+div.subs{
+    background-color:rgba(223, 222, 222, 0.8);
+    width: 100%;
+    z-index: 2;
+}
+div.sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.photo img{
+    width: 80px;
+}
+div.tonggle-menu > ul{
+    display: flex;
+}
+div.tonggle-menu > ul li{
+    list-style-type: none;
+    padding: 15px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+div.tonggle-menu > ul li a{
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+}
+
+#item1{
+    position: relative;
+}
+div.menus{
+    position: absolute;
+    padding: 0;
+    background-color:#ffffff;
+    width: 450px;
+    margin-top: 15px;
+    display: none;
+    border-radius: 0px 20px;
+
+}
+div.menus>ul{
+    padding: 0;
+}
+#item1:hover .menus{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    border: 1px solid rgb(117, 116, 116);
+    box-shadow: 7px 6px 11px 4px #00000029;
+}
+div.menus>ul>li{
+    font-size: 15px;
+}
+h1.name{
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    background-color: rgb(250, 150 , 0 , .8);
+    padding: 10px;
+}
+/* phần đăng nhập*/
+li.click{
+    position: relative;
+}
+div.login{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    display: none;
+}
+div.login.active{
+    width: 50%;
+    display:block;
+    position: absolute;
+
+}
+div.all-login.active{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(223, 222, 222, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 0;
+    position: fixed;
+}
+div.logins input{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+div.off-click{
+    position: absolute;
+    right: 0;
+    padding: 0 12px 0 0;
+}
+button.buy-ticket{
+    border: none;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: rgb(250, 150, 0);
+    width: 100%;
+}
+/* phần bản quyền*/
+div.licenses{
+    background-color: #fa9600;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 3px;
+}
+div.footer{
+    background-color:#0b3f67;
+    height: 400px;
+}
+div.information ul li{
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    
+}
+div.information ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+div.information strong{
+    flex: 0 0 30%;
+}
+ul.icon li a i{
+    margin: 10px;
+}
+/* box call and mess*/
+div.mess-box{
+    padding: 12px 15px;
+    position: fixed;
+    font-size: 20px;
+    background-color: #fa9600;
+    border-radius: 50px;
+    bottom: 70px;
+    left: 7px;
+}
+div.call-box{
+    position: fixed;
+    padding: 12px 15px;
+    font-size: 20px;
+    background-color: #fa9600;
+    border-radius: 50px;
+    bottom: 130px;
+    left: 7px;
+}
+/* bảng giá */
+div.big-price-list{
+    display: flex;
+    justify-content: space-around;
+    
+}
+div.small-price-list{
+    display: flex;
+    background-color: rgb(11, 63, 103, 0.9) ;
+    width: 60%;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 20px;
+    
+}
+div.price-list h2{
+    color: white;
+}
+div.price-list table, tr,td{
+    border: 2px solid white;
+    border-collapse:collapse;
+}
+div.price-list td{
+    padding: 10px;
+    color: #fa9600;
+    font-weight: 200;
+}
+div.price-list li{
+    padding: 8px;
+    color: #fff;
+    list-style-type:disc;
+}
+/* danh sách các nhà nghỉ của đà lạt*/
+div.product-list{
+    width: 20%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 0 20px 0;
+    margin: 0 20px 0 20px;
+}
+div img{
+    width: 100%;
+    border-radius: 20px 0 0 0;
+}
+div.product{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+div.content-product{
+    padding: 10px;
+}
+div.content-product h3{
+    margin: 10px 0 15px 0;
+    color: #fa9600;
+}
+div.content-product div{
+    padding: 5px;
+}
+div.product-list{
+    box-shadow: 13px 13px 10px 0 #00000029;
+    position: relative;
+}
+div.contact{
+    position: absolute;
+    top: 40%;
+    background-color: rgb(250, 150, 0, 0.7);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+}
+div.list-product-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 2px solid #fa9600;
+    margin-top: 10px;
+}
+div.lists{
+    background-color: rgb(250, 150 , 0 ,0.2); 
+    padding:5px;
+    position: relative;
+}
+div.list{
+    display: none;
+    position: relative;
+    width: 170%;
+}
+div.lists:hover .list{
+    position: absolute;
+    display: block;
+    padding: 0;
+    background-color: rgb(250, 150, 0);
+    padding: 5px;
+    z-index: 2;
+    left: -70px;
+    top: 35px;
+    text-align: left;
+    border-radius: 10px 0 10px 10px;
+
+}
+div.list li {
+    list-style-type:square;
+    padding: 2px;
+}
+div.list a{
+    color: #fff;
+}
+div.number{
+    display: flex;
+    justify-content:center;
+    margin-top:20px;
+}
+div.number >div{
+    border-radius: 50%;
+    border: 2px solid #fa9600;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+div.number a{
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+}
+div.number >div:hover{
+    background-color: #fa9600;
+}
+/* câu hỏi thường gặp*/
+div.question{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    border-top: 2px  solid #fa9600;
+}
+div.question-intro{
+    width: 20%;
+    background-color: rgb(158, 158, 158, 0.4);
+    padding: 40px 0 40px 40px;
+}
+div.questions ul li{
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(158, 158, 158, 0.4);
+    width: 200%;
+    padding: 30px 30px 30px 0;
+    background-color: white;
+}
+div.questions p{
+    display: none;
+    position: relative;
+}
+div.questions li:hover p{
+    display: block;
+    position: absolute;
+    background-color: #a1a1a1;
+    padding: 10px;
+    width: 100%;
+}
+/* nhận xét */
+div.comment{
+    margin-top: 10px;
+    display: flex;
+}
+div.comments{
+    content: "";
+    display: block;
+    width: 100%;
+    min-width: 37px;
+    height: 4px;
+    background: #fa9600;
+    margin-top: 8px;
+}
+div.user{
+    font-size: 60px;
+    color: #fa9600;
+    margin: 10px;
+}
+div.de > h2{
+    border-bottom: 3px solid #fa9600;
+    padding-left: 100px;
+}
+/*tin tức*/
+a.single-news{
+    width: 25%;
+    background-color:rgb(255, 255, 255);
+    box-shadow: -10px -13px 10px 0px #00000029;
+    border-radius: 30px 0 30px 0; 
+    margin: 10px;
+}
+div.single-news-content{
+    padding: 10px;
+}
+div.de > h2{
+    border-bottom: 3px solid #fa9600;
+    padding-left: 100px;
+}
+a.single-news:hover{
+    transition: box-shadow .5s;
+    box-shadow: -1px -1px 1px 0px #00000029;
+    
+}
